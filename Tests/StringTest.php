@@ -309,9 +309,9 @@ class StringTest extends \PHPUnit_Framework_TestCase
 	public function seedTestSubstr_replace()
 	{
 		return array(
-			array('321 Main Street', 'Broadway Avenue', 4, false, '321 Broadway Avenue'),
+			array('321 Main Street', 'Broadway Avenue', 4, null, '321 Broadway Avenue'),
 			array('321 Main Street', 'Broadway', 4, 4, '321 Broadway Street'),
-			array('чадна Би шил идэй чадна', '我能吞', 6, false, 'чадна 我能吞'),
+			array('чадна Би шил идэй чадна', '我能吞', 6, null, 'чадна 我能吞'),
 			array('чадна Би шил идэй чадна', '我能吞', 6, 2, 'чадна 我能吞 шил идэй чадна')
 		);
 	}
